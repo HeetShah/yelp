@@ -95,9 +95,12 @@ app.put("/api/v1/restaurants/:id", async (req, res) => {
 //Delete Restaurants
 app.delete("/api/v1/restaurants/:id", async (req, res) => {
   try {
-    const results = await db.query(
-      "ALTER TABLE reviews DROP CONSTRAINT reviews_restaurant_id_fkey, ADD CONSTRAINT reviews_restaurant_id_fkey FOREIGN KEY (restaurant_id) REFERENCES restaurants(id) ON DELETE CASCADE;"
-    );
+    // const results = await db.query(
+    //   "ALTER TABLE reviews DROP CONSTRAINT reviews_restaurant_id_fkey, ADD CONSTRAINT reviews_restaurant_id_fkey FOREIGN KEY (restaurant_id) REFERENCES restaurants(id) ON DELETE CASCADE;"
+    // );
+
+    const results = await db.query("DELETE FROM restaurants WHERE id = $1", [req.params.id]);
+
     res.status(204).json({
       status: "success",
     });
