@@ -148,16 +148,15 @@ export const RestaurantList = () => {
                 })}
             </Tbody>
 
-            <Tfoot>
+            {/* <Tfoot>
               <Tr>
-                <Th>Name</Th>
-                <Th>Location</Th>
+                <Th>Name</Th> 
                 <Th>Price Range</Th>
                 <Th>Rating</Th>
                 <Th>Edit</Th>
                 <Th>Delete</Th>
               </Tr>
-            </Tfoot>
+            </Tfoot> */}
           </Table>
         </TableContainer>
       </Box>
