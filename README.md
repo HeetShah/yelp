@@ -1,4 +1,4 @@
-# yelp
+# mini yelp clone
 
 To get started, make a .env file in the server folder. Fill out the following fields
 
