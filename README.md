@@ -1,5 +1,9 @@
 # mini yelp clone
 
+
+
+Here is a demo: http://13.58.52.86/
+
 To get started, make a .env file in the server folder. Fill out the following fields
 
 ```
